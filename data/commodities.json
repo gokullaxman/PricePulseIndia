@@ -1,0 +1,46 @@
+{
+    "version": "1.0",
+    "lastUpdated": "2026-03-31",
+    "data": {
+        "metals": {
+            "gold24k_per_gram": 15093,
+            "gold22k_per_gram": 13835,
+            "gold18k_per_gram": 11320,
+            "silver_per_gram": 260,
+            "platinum_per_gram": 3180,
+            "copper_per_kg": 852,
+            "aluminium_per_kg": 238,
+            "zinc_per_kg": 258,
+            "metalHistory": {
+                "Gold 24K": [14600, 14700, 14800, 14900, 14980, 15040, 15093],
+                "Gold 22K": [13400, 13480, 13560, 13610, 13660, 13740, 13835],
+                "Gold 18K": [10900, 10980, 11050, 11100, 11200, 11280, 11320],
+                "Silver": [270, 268, 265, 263, 261, 260, 260],
+                "Platinum": [3100, 3120, 3140, 3155, 3160, 3170, 3180],
+                "Copper": [820, 828, 835, 840, 844, 848, 852],
+                "Aluminium": [228, 230, 232, 234, 235, 237, 238],
+                "Zinc": [248, 250, 252, 254, 255, 257, 258]
+            }
+        },
+        "fuel": {
+            "cityPrices": {
+                "petrol": { "Chennai": 103.54, "Mumbai": 103.54, "Delhi": 94.77, "Bangalore": 102.96, "Hyderabad": 107.46, "Kolkata": 103.54, "Pune": 104.47, "Ahmedabad": 93.78, "Jaipur": 104.72, "Lucknow": 94.69, "Surat": 93.32, "Kochi": 107.14, "Chandigarh": 94.30, "Nagpur": 107.52, "Coimbatore": 103.54, "Indore": 106.45, "Bhopal": 106.52, "Patna": 105.58, "Visakhapatnam": 109.76, "Bhubaneswar": 103.42, "Mysore": 102.96, "Thiruvananthapuram": 107.66, "Madurai": 103.54, "Varanasi": 95.13 },
+                "diesel": { "Chennai": 90.03, "Mumbai": 90.03, "Delhi": 87.67, "Bangalore": 91.06, "Hyderabad": 95.70, "Kolkata": 92.02, "Pune": 90.57, "Ahmedabad": 90.35, "Jaipur": 90.62, "Lucknow": 87.80, "Surat": 89.56, "Kochi": 94.80, "Chandigarh": 82.45, "Nagpur": 94.24, "Coimbatore": 90.03, "Indore": 91.88, "Bhopal": 93.55, "Patna": 93.80, "Visakhapatnam": 97.63, "Bhubaneswar": 95.68, "Mysore": 89.02, "Thiruvananthapuram": 96.13, "Madurai": 90.03, "Varanasi": 87.81 },
+                "lpg14": { "base": 912.50 },
+                "lpg5": { "base": 450 },
+                "cng": { "Chennai": 0, "Mumbai": 75.50, "Delhi": 74.09, "Bangalore": 0, "Hyderabad": 0, "Kolkata": 0, "Pune": 94.50, "Ahmedabad": 101.00, "Jaipur": 87.00, "Lucknow": 89.50, "Surat": 101.00, "Kochi": 0, "Chandigarh": 82.60, "Nagpur": 0, "Coimbatore": 0, "Indore": 0, "Bhopal": 0, "Patna": 0, "Visakhapatnam": 0, "Bhubaneswar": 0, "Mysore": 0, "Thiruvananthapuram": 0, "Madurai": 0, "Varanasi": 88.00 },
+                "kerosene": { "base": 30.50 }
+            }
+        },
+        "groceries": {
+            "basePrices": {
+                "Tomato": 38, "Onion": 22, "Potato": 22, "Carrot": 50, "Cabbage": 20, "Cauliflower": 35, "Brinjal": 28, "Capsicum": 60, "Beans": 75, "Ginger": 115, "Garlic": 140, "GreenChilli": 50, "Peas": 80, "Coriander": 32, "Spinach": 28, "LadyFinger": 45, "BitterGourd": 50, "Drumstick": 60,
+                "Rice": 50, "RicePonni": 62, "Wheat": 30, "Atta": 35, "ToorDal": 132, "MoongDal": 118, "ChanaDal": 82, "UradDal": 128, "MasoorDal": 92, "Rajma": 148, "ChanaWhole": 75, "Poha": 55, "Sooji": 42,
+                "SunflowerOil": 135, "GroundnutOil": 172, "CoconutOil": 192, "MustardOil": 165, "RefinedOil": 128, "SesameOil": 218, "PalmOil": 112,
+                "Milk": 54, "MilkBuffalo": 62, "Curd": 58, "Paneer": 370, "Ghee": 578, "Butter": 56, "Cream": 85,
+                "Eggs": 80, "Sugar": 41, "Salt": 19, "Maida": 36, "Besan": 76, "Turmeric": 178, "RedChilliPowder": 218, "Cumin": 445, "CorianderPowder": 128, "GaramMasala": 320
+            }
+        },
+        "source": "Verified offline — March 20, 2026"
+    }
+}

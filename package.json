@@ -1,0 +1,11 @@
+{
+  "name": "pricepulse",
+  "version": "1.0.0",
+  "description": "PricePulse India - Live Price Tracker",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx http-server ."
+  },
+  "author": "",
+  "license": "ISC"
+}

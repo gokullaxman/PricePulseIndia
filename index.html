@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PricePulse India | Live Gold, Petrol, Grocery Prices & EMI Calculator</title>
+    <meta name="description" content="Track daily gold rates, petrol/diesel prices, grocery costs across India. Plus compare bank loan interest rates and calculate EMIs instantly.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/components.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-in">
+            <a href="#" class="logo">⚡ PricePulse</a>
+            <div class="ntabs" id="navTabs" role="tablist">
+                <button class="ntab active" data-s="loans" role="tab" aria-selected="true" data-key="nav_loans">Loans</button>
+                <button class="ntab" data-s="metals" role="tab" aria-selected="false" data-key="nav_metals">Metals</button>
+                <button class="ntab" data-s="groceries" role="tab" aria-selected="false" data-key="nav_groceries">Groceries</button>
+                <button class="ntab" data-s="fuel" role="tab" aria-selected="false" data-key="nav_fuel">Fuel & Gas</button>
+            </div>
+            <div class="nav-right">
+                <select class="csel" id="citySelect" aria-label="Select City">
+                    <option value="Chennai">Chennai</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Bhubaneswar">Bhubaneswar</option>
+                    <option value="Mysore">Mysore</option>
+                    <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Varanasi">Varanasi</option>
+                </select>
+                <button class="lang-btn" aria-label="Change Language">🌐 EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ticker-wrap"><div class="ticker-in">
+        <div class="tlbl">MARKET LIVE</div>
+        <div class="tscroll">
+            <div class="ttrack">
+                <div class="titem">NIFTY 50 <span>22,514</span> <span class="tup">▲ 0.4%</span></div>
+                <div class="titem">SENSEX <span>73,990</span> <span class="tup">▲ 0.3%</span></div>
+                <div class="titem">USD/INR <span>83.12</span> <span class="tdn">▼ 0.1%</span></div>
+                <div class="titem">BRENT CRUDE <span>$85.40</span> <span class="tup">▲ 1.2%</span></div>
+                <div class="titem">GOLD 1OZ <span>$2,160</span> <span class="tup">▲ 0.8%</span></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="titem">NIFTY 50 <span>22,514</span> <span class="tup">▲ 0.4%</span></div>
+                <div class="titem">SENSEX <span>73,990</span> <span class="tup">▲ 0.3%</span></div>
+                <div class="titem">USD/INR <span>83.12</span> <span class="tdn">▼ 0.1%</span></div>
+                <div class="titem">BRENT CRUDE <span>$85.40</span> <span class="tup">▲ 1.2%</span></div>
+                <div class="titem">GOLD 1OZ <span>$2,160</span> <span class="tup">▲ 0.8%</span></div>
+            </div>
+        </div>
+    </div></div>
+
+    <section class="hero">
+        <div class="hi">
+            <div class="hero-badges">
+                <div class="ubadge">🔥 Live Data</div>
+                <div class="ubadge" style="background:#EFF6FF;color:#2563EB">📅 <span id="dateBadge">Today</span></div>
+                <div class="ubadge" style="background:#FEF3C7;color:#D97706">⏳ <span id="nextUpdate">00:00:00</span> to next update</div>
+            </div>
+            <h1>
+                <span data-key="hero_title">Price Tracker</span><br>
+                India <img src="https://flagcdn.com/w40/in.png" alt="India Flag" style="width:28px;border-radius:4px;vertical-align:middle;margin-top:-6px">
+            </h1>
+            <p data-key="hero_sub">Gold, petrol, groceries & loans — updated daily at 6:00 AM IST across 24 cities.</p>
+        </div>
+    </section>
+
+    <div class="main">
+
+        <!-- LOANS SECTION -->
+        <section id="sec-loans" class="sec active" role="tabpanel">
+            <div class="shdr">
+                <div class="stitle">
+                    <div class="sico" style="background:#EFF6FF;color:#2563EB">🏦</div>
+                    <div>
+                        <h2 data-key="loans_title">Loans & Interest Rates</h2>
+                        <p data-key="fuel_update">Updates daily 6 AM IST</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Disclaimer:</strong> Interest rates and processing fees vary based on credit score, loan amount, and tenure. Data collected from official bank websites. Verify with the respective branch before applying.
+            </div>
+
+            <!-- Eligibility Checker -->
+            <div class="cmpbox" style="margin-bottom:20px;background:linear-gradient(to right, #ffffff, #F8FAFC)">
+                <h3 style="font-size:14px;font-weight:800;margin-bottom:6px" data-key="elig_title">Check Your Loan Eligibility</h3>
+                <p style="font-size:11px;color:var(--muted);margin-bottom:16px" data-key="elig_sub">Your actual rate is based on CIBIL score, income & age per RBI EBLR guidelines.</p>
+                
+                <div class="g4 elig-inputs">
+                    <div class="fg">
+                        <label data-key="cibil_lbl">CIBIL Score</label>
+                        <select id="eligCibil">
+                            <option value="800">Excellent (800+)</option>
+                            <option value="750" selected>Good (750-799)</option>
+                            <option value="700">Fair (700-749)</option>
+                            <option value="650">Poor (< 700)</option>
+                        </select>
+                    </div>
+                    <div class="fg">
+                        <label data-key="income_lbl">Monthly Income (₹)</label>
+                        <input type="number" id="eligIncome" value="60000" min="10000" step="5000">
+                    </div>
+                    <div class="fg">
+                        <label data-key="age_lbl">Age (years)</label>
+                        <input type="number" id="eligAge" value="30" min="21" max="70">
+                    </div>
+                    <div class="fg">
+                        <label data-key="emp_lbl">Employment Type</label>
+                        <select id="eligEmp">
+                            <option value="salaried" data-key="emp_salaried">Salaried</option>
+                            <option value="self" data-key="emp_self">Self-Employed</option>
+                            <option value="govt" data-key="emp_govt">Government Employee</option>
+                            <option value="pensioner" data-key="emp_pensioner">Pensioner</option>
+                        </select>
+                    </div>
+                    <div class="fg">
+                        <label data-key="existing_emi_lbl">Existing EMIs/month (₹)</label>
+                        <input type="number" id="eligEmi" value="0" min="0" step="1000">
+                    </div>
+                    <div class="fg">
+                        <label data-key="loan_type_lbl">Loan Type</label>
+                        <select id="eligType">
+                            <option value="home">Home Loan</option>
+                            <option value="car">Car Loan</option>
+                            <option value="personal">Personal Loan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="eligResultWrap" style="display:none;margin-top:10px">
+                    <div class="elig-res">
+                        <div class="g3">
+                            <div>
+                                <div style="font-size:10px;color:var(--muted);text-transform:uppercase;font-weight:700" data-key="max_loan">Max Eligible</div>
+                                <div style="font-size:22px;font-weight:900;color:#16A34A" id="eligLoan">₹0</div>
+                            </div>
+                            <div>
+                                <div style="font-size:10px;color:var(--muted);text-transform:uppercase;font-weight:700" data-key="your_rate">Your Rate (Est.)</div>
+                                <div style="font-size:16px;font-weight:800;margin-top:4px" id="eligRate">0%</div>
+                            </div>
+                            <div>
+                                <div style="font-size:10px;color:var(--muted);text-transform:uppercase;font-weight:700" data-key="max_tenure">Max Tenure</div>
+                                <div style="font-size:16px;font-weight:800;margin-top:4px" id="eligTenure">0 yrs</div>
+                            </div>
+                        </div>
+                        <div style="font-size:10px;color:var(--muted);margin-top:12px;text-align:center" data-key="elig_disclaimer">⚠️ Indicative only. Actual rate determined by bank after full credit assessment.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMI CALCULATOR -->
+            <div id="emiGrid">
+                <div class="emibox">
+                    <h3 style="font-size:15px;margin-bottom:18px;display:flex;align-items:center;gap:6px">
+                        <span data-key="emi_calc">🧮 EMI Calculator</span>
+                    </h3>
+                    
+                    <div class="fg cmpsels" style="display:flex;gap:10px;margin-bottom:16px">
+                        <div style="flex:1">
+                            <label data-key="loan_type">Loan Type</label>
+                            <select id="loanType">
+                                <option value="home">🏠 Home</option>
+                                <option value="car">🚗 Car</option>
+                                <option value="personal">💳 Personal</option>
+                                <option value="education">🎓 Education</option>
+                                <option value="business">🏭 Business</option>
+                                <option value="property">🏗 LAP</option>
+                                <option value="twoWheeler">🏍 2-Wheeler</option>
+                                <option value="gold">🥇 Gold</option>
+                                <option value="agriculture">🌾 Agri</option>
+                                <option value="medical">🏥 Medical</option>
+                            </select>
+                        </div>
+                        <div style="flex:1">
+                            <label data-key="select_bank">Select Bank</label>
+                            <select id="bankSelect"></select>
+                            <div id="pRateLbl" style="font-size:10px;color:var(--blue);margin-top:4px;font-weight:600"></div>
+                        </div>
+                    </div>
+
+                    <div class="fg">
+                        <div style="display:flex;justify-content:space-between">
+                            <label data-key="loan_amount">Loan Amount</label>
+                            <input type="number" id="loanAmtInput" value="5000000" style="width:100px;padding:2px 8px;font-size:11px;margin-top:-5px">
+                        </div>
+                        <input type="range" id="loanAmt" min="50000" max="50000000" step="50000" value="5000000" style="margin-top:10px">
+                        <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--muted);margin-top:3px">
+                            <span>₹50K</span><span>₹5Cr+</span>
+                        </div>
+                    </div>
+
+                    <div class="fg">
+                        <div style="display:flex;justify-content:space-between">
+                            <label data-key="tenure">Tenure (Years)</label>
+                            <input type="number" id="loanTenureInput" value="20" style="width:70px;padding:2px 8px;font-size:11px;margin-top:-5px">
+                        </div>
+                        <input type="range" id="loanTenure" min="1" max="30" step="1" value="20" style="margin-top:10px">
+                        <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--muted);margin-top:3px">
+                            <span>1 Yr</span><span>30 Yrs</span>
+                        </div>
+                    </div>
+
+                    <div class="emires">
+                        <div style="position:relative;width:130px;height:130px;margin:0 auto 20px">
+                            <svg viewBox="0 0 36 36" style="width:100%;height:100%;transform:rotate(-90deg)">
+                                <circle cx="18" cy="18" r="15.915" fill="transparent" stroke="#FEE2E2" stroke-width="3"></circle>
+                                <circle id="prnPie" cx="18" cy="18" r="15.915" fill="transparent" stroke="#16A34A" stroke-width="3" stroke-dasharray="0 100" stroke-linecap="round"></circle>
+                            </svg>
+                            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center;width:100%">
+                                <div style="font-size:10px;color:var(--muted);text-transform:uppercase;font-weight:700" data-key="monthly_emi">Monthly EMI</div>
+                                <div style="font-size:20px;font-weight:900;color:#D97706;margin-top:2px" id="emiTotal">₹0</div>
+                            </div>
+                        </div>
+                        
+                        <div style="display:flex;justify-content:space-between;border-top:1px solid #FDE68A;padding-top:12px;text-align:left">
+                            <div style="display:flex;align-items:center;gap:6px">
+                                <div style="width:10px;height:10px;background:#16A34A;border-radius:3px"></div>
+                                <div>
+                                    <div style="font-size:9px;color:var(--muted)" data-key="principal">Principal</div>
+                                    <div style="font-size:12px;font-weight:800;color:var(--text)" id="prnTotal">₹0</div>
+                                </div>
+                            </div>
+                            <div style="display:flex;align-items:center;gap:6px;text-align:right">
+                                <div>
+                                    <div style="font-size:9px;color:var(--muted)" data-key="interest">Total Interest</div>
+                                    <div style="font-size:12px;font-weight:800;color:#EF4444" id="totalInt">₹0</div>
+                                </div>
+                                <div style="width:10px;height:10px;background:#FEE2E2;border-radius:3px"></div>
+                            </div>
+                        </div>
+                        <div style="text-align:center;margin-top:12px;font-size:11px;font-weight:800;color:var(--text)">
+                            <span data-key="total_payable">Total Payable:</span> <span id="totalPayVal" style="color:#D97706">₹0</span>
+                        </div>
+                    </div>
+                    
+                    <div id="amortBtnWrap" style="text-align:center"></div>
+                </div>
+
+                <div class="cmpbox" style="display:flex;flex-direction:column">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+                        <h3 style="font-size:14px;font-weight:800" data-key="compare_banks">⚖️ Compare Banks</h3>
+                    </div>
+                    <div style="overflow-x:auto;flex:1;border:1px solid var(--border);border-radius:8px">
+                        <table class="tbl" style="min-width:400px;border:none;box-shadow:none">
+                            <thead>
+                                <tr>
+                                    <th>Bank</th>
+                                    <th>Rate</th>
+                                    <th>EMI</th>
+                                    <th class="bank-col-hide">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cmpTbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- METALS SECTION -->
+        <section id="sec-metals" class="sec" role="tabpanel">
+            <div class="shdr">
+                <div class="stitle">
+                    <div class="sico" style="background:#FEF3C7;color:#D97706">🥇</div>
+                    <div>
+                        <h2 data-key="metals_title">Metals & Commodities</h2>
+                        <p style="display:flex;align-items:center;gap:5px">
+                            <span class="ldot"></span>
+                            Live rates globally. <span id="metalSrc" style="color:#2563EB;font-weight:600"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="g4" id="metalsGrid"></div>
+        </section>
+
+        <!-- GROCERIES SECTION -->
+        <section id="sec-groceries" class="sec" role="tabpanel">
+            <div class="shdr">
+                <div class="stitle">
+                    <div class="sico" style="background:#DCFCE7;color:#16A34A">🛒</div>
+                    <div>
+                        <h2 data-key="groc_title">Grocery Prices</h2>
+                        <p>Avg retail prices across India</p>
+                    </div>
+                </div>
+                <input type="text" id="gSearch" class="finput" placeholder="Search items...">
+            </div>
+            
+            <div class="ltabs">
+                <button class="ltab active" data-c="all">All Items</button>
+                <button class="ltab" data-c="veg" data-key="veg">Vegetables</button>
+                <button class="ltab" data-c="grains" data-key="grains">Grains & Dal</button>
+                <button class="ltab" data-c="oils" data-key="oils">Oils</button>
+                <button class="ltab" data-c="dairy" data-key="dairy">Dairy</button>
+                <button class="ltab" data-c="others" data-key="others">Spices & Others</button>
+            </div>
+            
+            <div class="g4" id="gWrap"></div>
+        </section>
+
+        <!-- FUEL SECTION -->
+        <section id="sec-fuel" class="sec" role="tabpanel">
+            <div class="shdr">
+                <div class="stitle">
+                    <div class="sico" style="background:#FEE2E2;color:#DC2626">🛢️</div>
+                    <div>
+                        <h2 data-key="fuel_title">Fuel & Gas Prices</h2>
+                        <p data-key="fuel_update">Updates daily 6 AM IST</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fgrid" id="fuelWrap"></div>
+
+            <div class="cmpbox">
+                <h3 style="font-size:14px;font-weight:800;margin-bottom:12px" data-key="city_compare">🏙️ All Cities Comparison</h3>
+                <div style="overflow-x:auto;border:1px solid var(--border);border-radius:10px">
+                    <table class="tbl" style="min-width:500px;border:none;box-shadow:none">
+                        <thead>
+                            <tr>
+                                <th>City</th>
+                                <th>Petrol (₹)</th>
+                                <th>Diesel (₹)</th>
+                                <th>CNG (₹)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tBodyFuel"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Banners & Toasts -->
+    <div id="priceBanner"></div>
+    <div class="toast" id="toast">
+        <span class="tdot"></span><span id="toastMsg"></span>
+    </div>
+
+    <!-- Language Modal -->
+    <div class="lang-modal" id="langModal">
+        <div class="lang-box">
+            <button class="lang-close">✖</button>
+            <h3 style="font-size:18px;font-weight:800;margin-bottom:6px">Select Language</h3>
+            <p style="font-size:12px;color:var(--muted);margin-bottom:20px">Choose your preferred language for the interface.</p>
+            <div class="g2" id="langGrid" style="max-height:60vh;overflow-y:auto;padding-right:5px"></div>
+        </div>
+    </div>
+
+    <style>
+        .lang-card{border:1.5px solid var(--border);border-radius:12px;padding:12px;cursor:pointer;transition:all .2s;text-align:left;background:#fff}
+        .lang-card:hover{border-color:var(--text);transform:translateY(-2px)}
+        .lang-card.active{border-color:var(--amber);background:#FEFCE8;box-shadow:0 0 0 2px rgba(245,158,11,.2)}
+        .lang-name{font-size:13px;font-weight:800}
+        .lang-native{font-size:10px;color:var(--muted);margin-top:2px}
+    </style>
+
+    <!-- Admin Modal -->
+    <div class="admin-modal" id="adminModal">
+        <div class="admin-box">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+                <h2 style="font-size:20px;font-weight:900;color:var(--red)">⚙️ Central Bank Rate Master</h2>
+                <button class="admin-close">✖ Close Admin</button>
+            </div>
+            
+            <div class="g2" id="adminBankCards" style="margin-bottom:20px"></div>
+            
+            <div style="display:flex;gap:10px;margin-bottom:10px">
+                <button id="saveAllAdminBtn" style="padding:10px 20px;background:var(--green);color:#fff;border-radius:8px;border:none;font-weight:800;cursor:pointer;flex:1">💾 Save All Changes</button>
+                <button id="resetAdminBtn" style="padding:10px 20px;background:var(--muted);color:#fff;border-radius:8px;border:none;font-weight:800;cursor:pointer">🔄 Reset</button>
+            </div>
+            <div id="adminSaveStatus" style="font-size:12px;font-weight:700;text-align:center;margin-bottom:20px;min-height:20px"></div>
+
+            <div style="border-top:1px solid var(--border);padding-top:20px">
+                <h3 style="font-size:14px;font-weight:800;margin-bottom:10px">📝 Change Log (Local)</h3>
+                <div id="rateChangeLog" style="font-size:11px;color:var(--muted);background:#F8FAFC;padding:10px;border-radius:8px;max-height:150px;overflow-y:auto"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ES Module Entry -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

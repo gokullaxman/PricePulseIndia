@@ -1,0 +1,156 @@
+{
+    "version": "1.0",
+    "lastUpdated": "2026-03-31",
+    "languages": {
+        "en": { "name": "English", "native": "English", "flag": "🇬🇧" },
+        "hi": { "name": "Hindi", "native": "हिन्दी", "flag": "🇮🇳" },
+        "ta": { "name": "Tamil", "native": "தமிழ்", "flag": "🏳️" },
+        "te": { "name": "Telugu", "native": "తెలుగు", "flag": "🏳️" },
+        "kn": { "name": "Kannada", "native": "ಕನ್ನಡ", "flag": "🏳️" },
+        "ml": { "name": "Malayalam", "native": "മലയാളം", "flag": "🏳️" },
+        "mr": { "name": "Marathi", "native": "मराठी", "flag": "🏳️" },
+        "gu": { "name": "Gujarati", "native": "ગુજરાતી", "flag": "🏳️" },
+        "bn": { "name": "Bengali", "native": "বাংলা", "flag": "🏳️" },
+        "pa": { "name": "Punjabi", "native": "ਪੰਜਾਬੀ", "flag": "🏳️" },
+        "or": { "name": "Odia", "native": "ଓଡ଼ିଆ", "flag": "🏳️" },
+        "ur": { "name": "Urdu", "native": "اردو", "flag": "🏳️" }
+    },
+    "data": {
+        "en": {
+            "hero_title": "Price Tracker", "hero_sub": "Gold, petrol, groceries & loans — updated daily at 6:00 AM IST across 24 cities",
+            "nav_loans": "Loans", "nav_metals": "Metals", "nav_groceries": "Groceries", "nav_fuel": "Fuel & Gas",
+            "loans_title": "Loans & Interest Rates", "elig_title": "Check Your Loan Eligibility",
+            "elig_sub": "Your actual rate is based on CIBIL score, income & age per RBI EBLR guidelines",
+            "cibil_lbl": "CIBIL Score", "income_lbl": "Monthly Income (₹)", "age_lbl": "Age (years)",
+            "emp_lbl": "Employment Type", "existing_emi_lbl": "Existing EMIs/month (₹)", "loan_type_lbl": "Loan Type",
+            "max_loan": "Max Eligible", "your_rate": "Your Rate", "max_tenure": "Max Tenure", "approval": "Approval",
+            "elig_disclaimer": "⚠️ Indicative only. Actual rate determined by bank after full credit assessment.",
+            "emi_calc": "🧮 EMI Calculator", "select_bank": "Select Bank", "loan_type": "Loan Type",
+            "loan_amount": "Loan Amount", "tenure": "Tenure", "monthly_emi": "Monthly EMI",
+            "total_payable": "Total Payable", "total_interest": "Total Interest", "principal": "Principal", "interest": "Interest",
+            "compare_banks": "⚖️ Compare Banks", "amort_schedule": "📅 Amortization Schedule",
+            "metals_title": "Metals & Commodities", "gold_city": "📊 Gold 24K — City-wise Prices",
+            "groc_title": "Grocery Prices", "veg": "Vegetables", "grains": "Grains & Dal", "oils": "Oils", "dairy": "Dairy", "others": "Others",
+            "fuel_title": "Fuel & Gas Prices", "fuel_update": "Updates daily 6 AM IST", "city_compare": "🏙️ All Cities Comparison",
+            "emp_salaried": "Salaried", "emp_self": "Self-Employed", "emp_govt": "Government Employee", "emp_pensioner": "Pensioner"
+        },
+        "hi": {
+            "hero_title": "मूल्य ट्रैकर", "hero_sub": "सोना, पेट्रोल, किराना और ऋण — प्रतिदिन सुबह 6 बजे अपडेट होता है",
+            "nav_loans": "ऋण", "nav_metals": "धातु", "nav_groceries": "किराना", "nav_fuel": "ईंधन",
+            "loans_title": "ऋण और ब्याज दरें", "elig_title": "अपनी ऋण पात्रता जांचें",
+            "elig_sub": "आपकी वास्तविक दर CIBIL स्कोर, आय और आयु पर निर्भर है",
+            "cibil_lbl": "CIBIL स्कोर", "income_lbl": "मासिक आय (₹)", "age_lbl": "आयु (वर्ष)",
+            "emp_lbl": "रोजगार प्रकार", "existing_emi_lbl": "मौजूदा EMI/माह (₹)", "loan_type_lbl": "ऋण प्रकार",
+            "max_loan": "अधिकतम पात्रता", "your_rate": "आपकी दर", "max_tenure": "अधिकतम अवधि", "approval": "अनुमोदन",
+            "elig_disclaimer": "⚠️ सांकेतिक केवल। वास्तविक दर बैंक द्वारा निर्धारित की जाती है।",
+            "emi_calc": "🧮 EMI कैलकुलेटर", "select_bank": "बैंक चुनें", "loan_type": "ऋण प्रकार",
+            "loan_amount": "ऋण राशि", "tenure": "अवधि", "monthly_emi": "मासिक EMI",
+            "total_payable": "कुल देय", "total_interest": "कुल ब्याज", "principal": "मूलधन", "interest": "ब्याज",
+            "compare_banks": "⚖️ बैंकों की तुलना", "amort_schedule": "📅 किस्त विवरण",
+            "metals_title": "धातु और वस्तुएं", "gold_city": "📊 सोना 24K — शहरवार मूल्य",
+            "groc_title": "किराना मूल्य", "veg": "सब्जियां", "grains": "अनाज और दाल", "oils": "तेल", "dairy": "डेयरी", "others": "अन्य",
+            "fuel_title": "ईंधन और गैस मूल्य", "fuel_update": "प्रतिदिन सुबह 6 बजे अपडेट", "city_compare": "🏙️ सभी शहरों की तुलना",
+            "emp_salaried": "वेतनभोगी", "emp_self": "स्वरोजगार", "emp_govt": "सरकारी कर्मचारी", "emp_pensioner": "पेंशनभोगी"
+        },
+        "ta": {
+            "hero_title": "விலை கண்காணிப்பு", "hero_sub": "தங்கம், பெட்ரோல், மளிகை மற்றும் கடன்கள் — தினமும் காலை 6 மணிக்கு புதுப்பிக்கப்படும்",
+            "nav_loans": "கடன்", "nav_metals": "உலோகங்கள்", "nav_groceries": "மளிகை", "nav_fuel": "எரிபொருள்",
+            "loans_title": "கடன் மற்றும் வட்டி விகிதங்கள்", "elig_title": "உங்கள் கடன் தகுதியை சரிபார்க்கவும்",
+            "elig_sub": "உங்கள் விகிதம் CIBIL மதிப்பெண், வருமானம் மற்றும் வயதை அடிப்படையாக கொண்டது",
+            "cibil_lbl": "CIBIL மதிப்பெண்", "income_lbl": "மாதாந்திர வருமானம் (₹)", "age_lbl": "வயது",
+            "emp_lbl": "வேலை வகை", "existing_emi_lbl": "தற்போதைய EMI/மாதம் (₹)", "loan_type_lbl": "கடன் வகை",
+            "max_loan": "அதிகபட்ச தகுதி", "your_rate": "உங்கள் விகிதம்", "max_tenure: ": "அதிகபட்ச காலம்", "approval": "ஒப்புதல்",
+            "elig_disclaimer": "⚠️ சாத்தியமான மட்டும். வங்கியின் மதிப்பீட்டிற்குப் பிறகு விகிதம் நிர்ணயிக்கப்படும்.",
+            "emi_calc": "🧮 EMI கணக்கீடு", "select_bank": "வங்கி தேர்ந்தெடுக்கவும்", "loan_type": "கடன் வகை",
+            "loan_amount": "கடன் தொகை", "tenure": "காலம்", "monthly_emi": "மாதாந்திர EMI",
+            "total_payable": "மொத்த செலுத்தல்", "total_interest": "மொத்த வட்டி", "principal": "அசல்", "interest": "வட்டி",
+            "compare_banks": "⚖️ வங்கிகளை ஒப்பிடுக", "amort_schedule": "📅 மாதாந்திர விவரங்கள்",
+            "metals_title": "உலோகங்கள் மற்றும் பொருட்கள்", "gold_city": "📊 தங்கம் 24K — நகர வாரியான விலைகள்",
+            "groc_title": "மளிகை விலைகள்", "veg": "காய்கறிகள்", "grains": "தானியங்கள் மற்றும் பருப்பு", "oils": "எண்ணெய்கள்", "dairy": "பால் பொருட்கள்", "others": "மற்றவை",
+            "fuel_title": "எரிபொருள் மற்றும் வாயு விலைகள்", "fuel_update": "தினமும் காலை 6 மணிக்கு புதுப்பிப்பு", "city_compare": "🏙️ அனைத்து நகரங்களும்",
+            "emp_salaried": "சம்பளதாரர்", "emp_self": "சுயதொழில்", "emp_govt": "அரசு ஊழியர்", "emp_pensioner": "ஓய்வூதியதாரர்"
+        },
+        "te": {
+            "hero_title": "ధర ట్రాకర్", "hero_sub": "బంగారం, పెట్రోల్, కిరాణా మరియు రుణాలు — ప్రతిరోజూ ఉదయం 6 గంటలకు నవీకరించబడతాయి",
+            "nav_loans": "రుణాలు", "nav_metals": "లోహాలు", "nav_groceries": "కిరాణా", "nav_fuel": "ఇంధనం",
+            "loans_title": "రుణాలు మరియు వడ్డీ రేట్లు", "elig_title": "మీ రుణ అర్హతను తనిఖీ చేయండి",
+            "elig_sub": "మీ రేటు CIBIL స్కోర్, ఆదాయం మరియు వయసు ఆధారంగా ఉంటుంది",
+            "cibil_lbl": "CIBIL స్కోర్", "income_lbl": "నెలవారీ ఆదాయం (₹)", "age_lbl": "వయసు",
+            "emp_lbl": "ఉద్యోగ రకం", "existing_emi_lbl": "ఇప్పటికే ఉన్న EMI/నెల (₹)", "loan_type_lbl": "రుణ రకం",
+            "max_loan": "గరిష్ట అర్హత", "your_rate": "మీ రేటు", "max_tenure": "గరిష్ట కాలవ్యవధి", "approval": "అనుమతి",
+            "elig_disclaimer": "⚠️ సూచనగా మాత్రమే. వాస్తవ రేటు బ్యాంక్ నిర్ణయిస్తుంది.",
+            "emi_calc": "🧮 EMI కాలిక్యులేటర్", "select_bank": "బ్యాంక్ ఎంచుకోండి", "loan_type": "రుణ రకం",
+            "loan_amount": "రుణ మొత్తం", "tenure": "కాలవ్యవధి", "monthly_emi": "నెలవారీ EMI",
+            "total_payable": "మొత్తం చెల్లింపు", "total_interest": "మొత్తం వడ్డీ", "principal": "అసలు", "interest": "వడ్డీ",
+            "compare_banks": "⚖️ బ్యాంకులను పోల్చండి", "amort_schedule": "📅 నెలవారీ వివరాలు",
+            "metals_title": "లోహాలు మరియు వస్తువులు", "gold_city": "📊 బంగారం 24K — నగర వారీ ధరలు",
+            "groc_title": "కిరాణా ధరలు", "veg": "కూరగాయలు", "grains": "ధాన్యాలు మరియు పప్పులు", "oils": "నూనెలు", "dairy": "పాల ఉత్పత్తులు", "others": "ఇతరాలు",
+            "fuel_title": "ఇంధనం మరియు గ్యాస్ ధరలు", "fuel_update": "ప్రతిరోజూ ఉదయం 6 గంటలకు నవీకరణ", "city_compare": "🏙️ అన్ని నగరాల పోలిక",
+            "emp_salaried": "జీతగాడు", "emp_self": "స్వయం ఉద్యోగి", "emp_govt": "ప్రభుత్వ ఉద్యోగి", "emp_pensioner": "పెన్షనర్"
+        },
+        "kn": {
+            "hero_title": "ಬೆಲೆ ಟ್ರ್ಯಾಕರ್", "hero_sub": "ಚಿನ್ನ, ಪೆಟ್ರೋಲ್, ದಿನಸಿ ಮತ್ತು ಸಾಲಗಳು — ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ 6 ಗಂಟೆಗೆ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ",
+            "nav_loans": "ಸಾಲ", "nav_metals": "ಲೋಹಗಳು", "nav_groceries": "ದಿನಸಿ", "nav_fuel": "ಇಂಧನ",
+            "loans_title": "ಸಾಲ ಮತ್ತು ಬಡ್ಡಿ ದರಗಳು", "elig_title": "ನಿಮ್ಮ ಸಾಲ ಅರ್ಹತೆ ಪರಿಶೀಲಿಸಿ",
+            "max_loan": "ಗರಿಷ್ಠ ಅರ್ಹತೆ", "your_rate": "ನಿಮ್ಮ ದರ", "max_tenure": "ಗರಿಷ್ಠ ಅವಧಿ", "approval": "ಅನುಮೋದನೆ",
+            "emi_calc": "🧮 EMI ಕ್ಯಾಲ್ಕುಲೇಟರ್", "metals_title": "ಲೋಹಗಳು", "groc_title": "ದಿನಸಿ ಬೆಲೆಗಳು",
+            "fuel_title": "ಇಂಧನ ಬೆಲೆಗಳು", "veg": "ತರಕಾರಿಗಳು", "grains": "ಧಾನ್ಯಗಳು", "oils": "ಎಣ್ಣೆಗಳು", "dairy": "ಡೈರಿ", "others": "ಇತರೆ"
+        },
+        "ml": {
+            "hero_title": "വില ട്രാക്കർ", "hero_sub": "സ്വർണ്ണം, പെട്രോൾ, പലവ്യഞ്ജനം, വായ്പ — ദിനവും രാവിലെ 6 മണിക്ക് അപ്ഡേറ്റ്",
+            "nav_loans": "വായ്പ", "nav_metals": "ലോഹങ്ങൾ", "nav_groceries": "പലവ്യഞ്ജനം", "nav_fuel": "ഇന്ധനം",
+            "loans_title": "വായ്പ & പലിശ നിരക്കുകൾ", "elig_title": "നിങ്ങളുടെ വായ്പ യോഗ്യത പരിശോധിക്കുക",
+            "max_loan": "പരമാവധി യോഗ്യത", "your_rate": "നിങ്ങളുടെ നിരക്ക്", "max_tenure": "പരമാവധി കാലാവധി", "approval": "അംഗീകാരം",
+            "emi_calc": "🧮 EMI കാൽക്കുലേറ്റർ", "metals_title": "ലോഹങ്ങൾ", "groc_title": "പലവ്യഞ്ജന വിലകൾ",
+            "fuel_title": "ഇന്ധന വിലകൾ", "veg": "പച്ചക്കറികൾ", "grains": "ധാന്യങ്ങൾ", "oils": "എണ്ണകൾ", "dairy": "ഡെയറി", "others": "മറ്റുള്ളവ"
+        },
+        "mr": {
+            "hero_title": "किंमत ट्रॅकर", "hero_sub": "सोने, पेट्रोल, किराणा आणि कर्ज — दररोज सकाळी 6 वाजता अपडेट होते",
+            "nav_loans": "कर्ज", "nav_metals": "धातू", "nav_groceries": "किराणा", "nav_fuel": "इंधन",
+            "loans_title": "कर्ज आणि व्याजदर", "elig_title": "आपली कर्ज पात्रता तपासा",
+            "max_loan": "कमाल पात्रता", "your_rate": "तुमचा दर", "max_tenure": "कमाल कालावधी", "approval": "मंजुरी",
+            "emi_calc": "🧮 EMI कॅल्क्युलेटर", "metals_title": "धातू", "groc_title": "किराणा किंमती",
+            "fuel_title": "इंधन किंमती", "veg": "भाज्या", "grains": "धान्ये", "oils": "तेल", "dairy": "दुग्धजन्य", "others": "इतर"
+        },
+        "gu": {
+            "hero_title": "ભાવ ટ્રેકર", "hero_sub": "સોનું, પેટ્રોલ, કરિયાણા અને લોન — દરરોજ સવારે 6 વાગ્યે અપડેટ",
+            "nav_loans": "લોન", "nav_metals": "ધાતુ", "nav_groceries": "કરિયાણા", "nav_fuel": "ઇંધણ",
+            "loans_title": "લોન અને વ્યાજ દરો", "elig_title": "તમારી લોન પાત્રતા તપાસો",
+            "max_loan": "મહત્તમ પાત્રતા", "your_rate": "તમારો દર", "max_tenure": "મહત્તમ સમયગાળો", "approval": "મંજૂરી",
+            "emi_calc": "🧮 EMI કેલ્ક્યુલેટર", "metals_title": "ધાતુઓ", "groc_title": "કરિયાણા ભાવ",
+            "fuel_title": "ઇંધણ ભાવ", "veg": "શાકભાજી", "grains": "અનાજ", "oils": "તેલ", "dairy": "ડેરી", "others": "અન્ય"
+        },
+        "bn": {
+            "hero_title": "মূল্য ট্র্যাকার", "hero_sub": "সোনা, পেট্রোল, মুদিখানা এবং ঋণ — প্রতিদিন সকাল ৬টায় আপডেট হয়",
+            "nav_loans": "ঋণ", "nav_metals": "ধাতু", "nav_groceries": "মুদিখানা", "nav_fuel": "জ্বালানি",
+            "loans_title": "ঋণ ও সুদের হার", "elig_title": "আপনার ঋণ যোগ্যতা পরীক্ষা করুন",
+            "max_loan": "সর্বোচ্চ যোগ্যতা", "your_rate": "আপনার হার", "max_tenure": "সর্বোচ্চ মেয়াদ", "approval": "অনুমোদন",
+            "emi_calc": "🧮 EMI ক্যালকুলেটর", "metals_title": "ধাতু ও পণ্য", "groc_title": "মুদিখানা মূল্য",
+            "fuel_title": "জ্বালানি মূল্য", "veg": "সবজি", "grains": "শস্য", "oils": "তেল", "dairy": "দুগ্ধজাত", "others": "অন্যান্য"
+        },
+        "pa": {
+            "hero_title": "ਕੀਮਤ ਟ੍ਰੈਕਰ", "hero_sub": "ਸੋਨਾ, ਪੈਟਰੋਲ, ਕਿਰਾਨਾ ਅਤੇ ਕਰਜ਼ — ਰੋਜ਼ ਸਵੇਰੇ 6 ਵਜੇ ਅੱਪਡੇਟ ਹੁੰਦਾ ਹੈ",
+            "nav_loans": "ਕਰਜ਼ਾ", "nav_metals": "ਧਾਤੂ", "nav_groceries": "ਕਿਰਾਨਾ", "nav_fuel": "ਬਾਲਣ",
+            "loans_title": "ਕਰਜ਼ੇ ਅਤੇ ਵਿਆਜ ਦਰਾਂ", "elig_title": "ਆਪਣੀ ਕਰਜ਼ਾ ਯੋਗਤਾ ਜਾਂਚੋ",
+            "max_loan": "ਵੱਧ ਤੋਂ ਵੱਧ ਯੋਗਤਾ", "your_rate": "ਤੁਹਾਡੀ ਦਰ", "max_tenure": "ਵੱਧ ਤੋਂ ਵੱਧ ਮਿਆਦ", "approval": "ਮਨਜ਼ੂਰੀ",
+            "emi_calc": "🧮 EMI ਕੈਲਕੁਲੇਟਰ", "metals_title": "ਧਾਤੂਆਂ", "groc_title": "ਕਿਰਾਨਾ ਕੀਮਤਾਂ",
+            "fuel_title": "ਬਾਲਣ ਕੀਮਤਾਂ", "veg": "ਸਬਜ਼ੀਆਂ", "grains": "ਅਨਾਜ", "oils": "ਤੇਲ", "dairy": "ਡੇਅਰੀ", "others": "ਹੋਰ"
+        },
+        "or": {
+            "hero_title": "ମୂଲ୍ୟ ଟ୍ରାକର", "hero_sub": "ସୁନା, ପେଟ୍ରୋଲ, ଦ୍ରବ୍ୟ ଓ ଋଣ — ପ୍ରତିଦିନ ସକାଳ ୬ ଟାରେ ଅପଡେଟ",
+            "nav_loans": "ଋଣ", "nav_metals": "ଧାତୁ", "nav_groceries": "ଦ୍ରବ୍ୟ", "nav_fuel": "ଇନ୍ଧନ",
+            "loans_title": "ଋଣ ଓ ସୁଧ ହାର", "elig_title": "ଆପଣଙ୍କ ଋଣ ଯୋଗ୍ୟତା ଯାଞ୍ଚ କରନ୍ତୁ",
+            "max_loan": "ସର୍ବୋଚ୍ଚ ଯୋଗ୍ୟତା", "your_rate": "ଆପଣଙ୍କ ହାର", "max_tenure": "ସର୍ବୋଚ୍ଚ ଅବଧି", "approval": "ଅନୁମୋଦନ",
+            "emi_calc": "🧮 EMI କ୍ୟାଲ୍କୁଲେଟର", "metals_title": "ଧାତୁ", "groc_title": "ଦ୍ରବ୍ୟ ମୂଲ୍ୟ",
+            "fuel_title": "ଇନ୍ଧନ ମୂଲ୍ୟ", "veg": "ପନିପରିବା", "grains": "ଧାନ୍ୟ", "oils": "ତେଲ", "dairy": "ଦୁଗ୍ଧ", "others": "ଅନ୍ୟ"
+        },
+        "ur": {
+            "hero_title": "قیمت ٹریکر", "hero_sub": "سونا، پیٹرول، کریانہ اور قرض — روزانہ صبح 6 بجے اپ ڈیٹ ہوتا ہے",
+            "nav_loans": "قرض", "nav_metals": "دھاتیں", "nav_groceries": "کریانہ", "nav_fuel": "ایندھن",
+            "loans_title": "قرض اور سود کی شرحیں", "elig_title": "اپنی قرض کی اہلیت جانچیں",
+            "max_loan": "زیادہ سے زیادہ اہلیت", "your_rate": "آپ کی شرح", "max_tenure": "زیادہ سے زیادہ مدت", "approval": "منظوری",
+            "emi_calc": "🧮 EMI کیلکولیٹر", "metals_title": "دھاتیں", "groc_title": "کریانہ کی قیمتیں",
+            "fuel_title": "ایندھن کی قیمتیں", "veg": "سبزیاں", "grains": "اناج", "oils": "تیل", "dairy": "دودھ کی مصنوعات", "others": "دیگر"
+        }
+    }
+}
